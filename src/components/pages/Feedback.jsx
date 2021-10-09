@@ -26,7 +26,7 @@ class Feedback extends Component {
     }
 
     divMinHeight = {
-        minHeight: '600px'
+        minHeight: '200px'
     }
 
     render() {

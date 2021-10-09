@@ -9,6 +9,7 @@ import Login from "./components/pages/Login";
 import Dashboard from "./components/pages/Dashboard";
 import Feedback from "./components/pages/Feedback";
 import ViewAllPizzas from "./components/pages/pizza/ViewAllPizzas";
+import AddPizza from "./components/pages/pizza/AddPizza";
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
 
 
                 <Route path="/pizza/viewAll" component={ViewAllPizzas}/>
+                <Route path="/pizza/addPizza" component={AddPizza}/>
 
 
                 <Redirect to="/"/>

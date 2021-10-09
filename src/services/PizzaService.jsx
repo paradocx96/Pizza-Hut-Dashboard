@@ -11,6 +11,6 @@ export default new class PizzaService{
     }
 
     addPizza(pizza){
-        return axios.post(URL + "addPizza", pizza);
+        return axios.post(URL + "addPiza", pizza);
     }
 }

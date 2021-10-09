@@ -2,6 +2,7 @@ import React from "react";
 import {Table} from "react-bootstrap";
 import PizzaSerivice from "../../../services/PizzaService";
 import data from "bootstrap/js/src/dom/data";
+import {Link} from "react-router-dom";
 
 
 class ViewAllPizzas extends React.Component{
@@ -27,6 +28,8 @@ class ViewAllPizzas extends React.Component{
             <div>
                 <div>
                     <h2>All Pizzas</h2>
+
+                    <Link to={'/pizza/addPizza'}>Add new pizza</Link>
 
                     <Table striped bordered hover variant="dark">
                         <thead>

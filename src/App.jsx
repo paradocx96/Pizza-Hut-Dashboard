@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from "./components/pages/Login";
 import Dashboard from "./components/pages/Dashboard";
 import Feedback from "./components/pages/Feedback";
+import ViewAllPizzas from "./components/pages/pizza/ViewAllPizzas";
 
 
 export default function App() {
@@ -21,6 +22,9 @@ export default function App() {
                 {/* DASHBOARD */}
                 <Route path="/dashboard" component={Dashboard}/>
                 <Route path="/feedback" component={Feedback}/>
+
+
+                <Route path="/pizza/viewAll" component={ViewAllPizzas}/>
 
 
                 <Redirect to="/"/>

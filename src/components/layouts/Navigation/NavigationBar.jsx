@@ -30,7 +30,8 @@ class NavigationBar extends Component {
                             <Nav className="me-auto">
                                 <Link to={'/feedback'} className={'nav-link'}>Feedback</Link>
                                 <Link to={'/user'} className={'nav-link'}>Users</Link>
-                                <Link to={'/order'} className={'nav-link'}>Oder</Link>
+                                <Link to={'/order'} className={'nav-link'}>Order</Link>
+                                <Link to={'/pizza/viewAll'} className={'nav-link'}>Pizzas</Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

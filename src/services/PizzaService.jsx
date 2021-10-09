@@ -1,6 +1,7 @@
 import axios from "axios";
 import connection from "./connecction.json";
 
+const SERVICE_URL = "/api/pizza/";
 const URL = connection.remoteAddress + SERVICE_URL;
 
 export default new class PizzaService{

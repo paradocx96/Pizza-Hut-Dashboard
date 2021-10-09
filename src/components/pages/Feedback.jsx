@@ -34,6 +34,7 @@ class Feedback extends Component {
             <div>
                 <NavigationBar/>
                 <Container>
+                    <h1>Customer Feedback</h1>
                     <Table striped bordered hover variant="dark" size="sm">
                         <thead>
                         <tr>

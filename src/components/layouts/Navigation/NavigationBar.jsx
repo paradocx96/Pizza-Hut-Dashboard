@@ -29,8 +29,8 @@ class NavigationBar extends Component {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <Link to={'/feedback'} className={'nav-link'}>Feedback</Link>
-                                <Link to={'/user'} className={'nav-link'}>Users</Link>
-                                <Link to={'/order'} className={'nav-link'}>Order</Link>
+                                {/*<Link to={'/user'} className={'nav-link'}>Users</Link>*/}
+                                {/*<Link to={'/order'} className={'nav-link'}>Order</Link>*/}
                                 <Link to={'/pizza/viewAll'} className={'nav-link'}>Pizzas</Link>
                             </Nav>
                         </Navbar.Collapse>

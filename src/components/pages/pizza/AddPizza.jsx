@@ -1,10 +1,9 @@
 import React from "react";
 import PizzaService from "../../../services/PizzaService";
-import data from "bootstrap/js/src/dom/data";
-import {Button, Form} from "react-bootstrap";
-import NavigationBar from "../layouts/Navigation/NavigationBar";
+import {Button, Container, Form} from "react-bootstrap";
+import NavigationBar from "../../layouts/Navigation/NavigationBar";
 
-class AddPizza extends React.Component{
+class AddPizza extends React.Component {
     constructor(props) {
         super(props);
         this.state = this.initialState;
@@ -13,28 +12,28 @@ class AddPizza extends React.Component{
 
     }
 
-    initialState={
-        name:'',
-        range:'',
-        description:'',
-        flag:'',
+    initialState = {
+        name: '',
+        range: '',
+        description: '',
+        flag: '',
     }
 
     submitPizza = async (event) => {
 
         event.preventDefault();
 
-        let pizza={
-            name:this.state.name,
+        let pizza = {
+            name: this.state.name,
             range: this.state.range,
-            description:this.state.description,
-            flag:this.state.flag
+            description: this.state.description,
+            flag: this.state.flag
         }
 
         await PizzaService.addPizza(pizza)
             .then(response => response.data)
             .then((data) => {
-                if(data != null){
+                if (data != null) {
                     alert("Pizza successfully added.")
                 }
             }).catch(error => {
@@ -43,7 +42,7 @@ class AddPizza extends React.Component{
     }
 
     onChange = (event) => {
-        this.setState({[event.target.name] : event.target.value});
+        this.setState({[event.target.name]: event.target.value});
     }
 
     render() {
@@ -51,7 +50,7 @@ class AddPizza extends React.Component{
         return (
             <div>
                 <NavigationBar/>
-                <div className={'container-fluid'}>
+                <Container>
                     <h2>Add Pizza</h2>
 
                     <Form onSubmit={this.submitPizza}>
@@ -109,10 +108,8 @@ class AddPizza extends React.Component{
                         </Form.Group>
 
                         <Button type={'submit'} className={'btn btn-success'}>Submit Pizza</Button>
-
                     </Form>
-                </div>
-
+                </Container>
             </div>
         );
     }

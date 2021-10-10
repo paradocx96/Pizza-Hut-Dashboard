@@ -3,6 +3,7 @@ import {Table} from "react-bootstrap";
 import PizzaSerivice from "../../../services/PizzaService";
 import data from "bootstrap/js/src/dom/data";
 import {Link} from "react-router-dom";
+import NavigationBar from "../layouts/Navigation/NavigationBar";
 
 
 class ViewAllPizzas extends React.Component{
@@ -26,6 +27,8 @@ class ViewAllPizzas extends React.Component{
     render() {
         return (
             <div>
+            <NavigationBar/>
+                <Container>
                 <div>
                     <h2>All Pizzas</h2>
 
@@ -59,6 +62,7 @@ class ViewAllPizzas extends React.Component{
                         </tbody>
                     </Table>
                 </div>
+                </Container>
             </div>
         );
     }

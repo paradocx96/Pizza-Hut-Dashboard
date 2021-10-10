@@ -66,7 +66,7 @@ class Feedback extends Component {
                     </Table>
                 </Container>
                 <div style={this.divMinHeight}/>
-                <FooterBar/>
+                {/*<FooterBar/>*/}
             </div>
         );
     }

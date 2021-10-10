@@ -19,7 +19,7 @@ class Dashboard extends Component {
 
 
                 </Container>
-                <FooterBar/>
+                {/*<FooterBar/>*/}
             </div>
         );
     }

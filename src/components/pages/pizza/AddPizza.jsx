@@ -2,6 +2,7 @@ import React from "react";
 import PizzaService from "../../../services/PizzaService";
 import data from "bootstrap/js/src/dom/data";
 import {Button, Form} from "react-bootstrap";
+import NavigationBar from "../layouts/Navigation/NavigationBar";
 
 class AddPizza extends React.Component{
     constructor(props) {
@@ -49,6 +50,7 @@ class AddPizza extends React.Component{
         const {name, range, flag, description} = this.state;
         return (
             <div>
+                <NavigationBar/>
                 <div className={'container-fluid'}>
                     <h2>Add Pizza</h2>
 
